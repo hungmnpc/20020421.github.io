@@ -1,0 +1,207 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* --------------reuseable------------ */
+li{
+    list-style: none;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+input[type="submit"]{
+    display: none;
+}
+input[type="text"]{
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+/* --------------------------------- */
+/* ----------header---------------- */
+/* ---------------------------------- */
+
+
+/* -----------header-top------------- */
+.header-top{
+    display: flex;
+    margin: 0 12.5%;
+}
+
+.header-top ul li a{
+    display: inline-block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.header-top ul li a{
+    color: black;
+    font-size: 70%;
+    font-weight: 50;
+    transition: all .5s;
+}
+.link-header-top, .user{
+    width: 50%;
+}
+.link-header-top ul li {
+    float:left;
+}
+.user ul li{
+    float: right;
+}
+.header-top li:hover a{
+    color: blanchedalmond;
+    cursor: pointer;
+}
+/* ----------------------------------------- */
+/* --------------header-content---------- */
+/* --------------------------------------- */
+.header-content{
+    display: flex;
+    background-color: #c6b082;
+    padding: 10px   12.5%;
+}
+.logo, .cart{
+    width: 25%;
+}
+.search-bar{
+    width: 50%;
+}
+
+.cart div{
+    float: right;
+}
+/* --------------logo--------- */
+.logo img{
+    width: 35%;
+}
+/* ----------search-bar-------------- */
+.search-bar{
+    position: relative;
+    margin: auto 0;
+}
+.search-bar input{
+    width: 87%;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 75%;
+    position: relative;
+}
+.search-bar .btn {
+    display: inline-block;
+    width: 7%;
+    height: 34.14px;
+    color: white;
+    background-color:#600;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+}
+/* -----------cart----------------------- */
+.cart i{
+    font-size: 200%;
+    color: #600;
+    cursor: pointer;
+}
+.cart {
+    margin: auto 0;
+}
+.cart a{
+    color: #600;
+    font-size: 90%;
+    margin: auto 5px;
+}
+/* ------------------------------- */
+/* ----------nav-------------------- */
+/* ------------------------------- */
+.nav{
+    padding-right:12.5%;
+    padding-left: 12.5%;
+    background-color: #600;
+}
+.nav>ul>li>i{
+    color: white;
+
+}
+.nav>ul>li {
+    display: inline-block;
+    padding: 13px 20px;
+    cursor: pointer;
+    position: relative;
+}
+.nav ul li .main-content{
+    font-size: 90%;
+    font-weight: 500;
+    color:  white;
+    transition: all .3s;
+}
+.dropdown-menu{
+    display: none;
+    width: 140%;
+    position: absolute;
+    top: 98%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .15);
+    z-index: 1000;
+}
+.dropright-menu{
+    display: none;
+    width: 120%;
+    position: absolute;
+    top: 0px;
+    left: 98%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .15);
+    z-index: 1000;
+}
+.dropdown-menu>li,
+.dropright-menu>li{
+    padding: 10px 10px;
+}
+.dropdown-menu li a{
+    color: black;
+    font-size: 80%;
+}
+
+.dropdown-menu>li>i{
+    float: right;
+    color: black;
+}
+.nav ul li:hover .main-content
+{
+    color: #c6b082;
+}
+.nav>ul>li:hover .fa-angle-down{
+    color: #c6b082;
+}
+.nav>ul>li:hover .dropdown-menu{
+    display: block;
+}
+.nav ul li .dropdown-menu li:hover .dropright-menu{
+    display: block;
+}
+.dropdown-menu li:hover,
+.dropright-menu>li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu li:hover >a,
+.dropright-menu>li:hover >a,
+ .dropdown-menu li:hover i,
+.dropright-menu>li:hover i{
+    color: #c6b082;
+}
+
+
+
